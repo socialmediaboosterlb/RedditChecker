@@ -6,8 +6,11 @@ import os
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-available = open('aReddit.txt', 'a+')
-notAvailable = open('notAReddit.txt', 'a+')
+available = open('availableReddit.txt', 'a+')
+notAvailable = open('notAvailableReddit.txt', 'a+')
+
+os.system("title Reddit Checker by @socialmediaboosterlb")
+os.system("cls" or "clear")
 
 def checker(username):
     link = "https://www.reddit.com/api/username_available.json?user="+username
